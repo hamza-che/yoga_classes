@@ -52,13 +52,12 @@
             img {
                 max-width: 150%;
                 position: absolute;
-                top: -120%;
                 left: -20%;
                 z-index: 2;
             }
         }
         .landing-title {
-            line-height: 1.3;
+            line-height: $p-l-height;
             flex-basis: 50%;
             display: flex;
             justify-content: center;
@@ -106,16 +105,22 @@
         gap: 5rem;
         .info {
             flex-basis: 50%;
+            h2 {
+                color: $main-color;
+                font-size: 2.5em;
+                font-weight: normal;
+            }
             p {
                 margin-top: 1.5rem;
                 margin-bottom: 2rem;
-                line-height: $p-f-wieght;
+                line-height: $p-l-height;
+                color: $p-color;
             }
             .video {
                 position: relative;
-                display: flex;
-                // justify-content: center;
-                // align-items: center;
+                video {
+                    border-radius: 5px;
+                }
                 .play {
                     margin: auto;
                     position: absolute;
@@ -167,12 +172,26 @@
                 margin-bottom: 2rem;
                 display: flex;
                 gap: 1.5rem;
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    padding: 20px;
+                    border-radius: 50%;
+                    border: 2px solid $main-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $main-color;
+                    font-size: 1.5em;
+                }
                 h3 {
                     margin-bottom: .7rem;
+                    color: $main-color;
+                    font-weight: normal;
                 }
                 p {
                     color: $p-color;
-                    line-height: $p-f-wieght;
+                    line-height: $p-l-height;
                 }
             }
         }
