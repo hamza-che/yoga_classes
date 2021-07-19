@@ -14,6 +14,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
+        <!-- Mapbox -->
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
         <!-- CSS File -->
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -412,21 +414,73 @@
         <footer>
             <div class="site-map">
                 <div class="container">
-                    <div class="contact"></div>
-                    <div class="useful-links"></div>
-                    <div class="open-hours"></div>
-                    <div class="location"></div>
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <address>
+                            PO Box 16122 Collins Street West,<br>
+                            Victoria 8007 Australia
+                        </address>
+                        <span class="mail">
+                            Alitstudios@gmai.com
+                        </span>
+                        <span class="phone">
+                            +61 3 8376 6284
+                        </span>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="useful-links">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Advertise</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Careers</li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                    <div class="open-hours">
+                        <h3>Open Hours</h3>
+                        <ul>
+                            <li><span class="day">Monday</span>  11am - 2pm</li>
+                            <li><span class="day">Thursday</span>  8am - 10pm</li>
+                            <li><span class="day">Wednsday</span>  11am - 12pm</li>
+                            <li><span class="day">Thursday</span>  11am - 12pm</li>
+                            <li><span class="day">Friday</span>  11am - 2pm</li>
+                            <li><span class="day">Saturday</span>  10am - 2pm</li>
+                            <li><span class="day">Sunday</span>  Close</li>
+                        </ul>
+                    </div>
+                    <div class="location">
+                        <h3>Our Location</h3>
+                        <div id='map' class="map"></div>
+                    </div>
                 </div>
             </div>
             <div class="sub-footer">
                 <div class="container">
-
+                    <span>BUILT WITH 💚 THEME BY alitstudio</span>
                 </div>
             </div>
         </footer>
         <!-- End Footer -->
 
-        <!-- Javascript -->
+        <!-- Mapbox script -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <!-- Main JS File -->
         <script src="js/main.js"></script>
     </body>
 </html>

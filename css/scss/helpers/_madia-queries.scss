@@ -58,7 +58,8 @@
     .instructors {
         .instructor {
             width: 80%;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     .renewal-series {
@@ -71,6 +72,22 @@
         }
         .image {
             display: none;
+        }
+    }
+        .subscribe {
+        .info {
+            h3 {
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .form {
+            input[type=email] {
+                width: 320px !important;
+            }
         }
     }
 }
@@ -131,6 +148,13 @@
             font-size: 2.2rem;
         }
     }
+    .subscribe {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 3rem;
+    }
+}
 }
 /* Medium Screens */
 @media (min-width: 992px) {

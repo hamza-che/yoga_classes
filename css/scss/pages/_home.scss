@@ -488,6 +488,105 @@
     }
 }
 
+footer {
+    padding-top: 4rem;
+    background-color: #222222;
+    color: #fff;
+    h3 {
+        margin-bottom: 2rem;
+    }
+    .container:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        row-gap: 3.5rem;
+        .contact {
+            line-height: 1.5;
+            & > * {
+                margin-bottom: 1rem;
+            }
+            span {
+                display: block;
+            }
+            .social-icons {
+                
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    color: #fff;
+                    @include transition();
+                    &:first-child {
+                        background-color: #365493;
+                    }
+                    &:nth-child(2) {
+                        background-color: #33ccff;
+                    }
+                    &:nth-child(3) {
+                        background-color: #c13584;
+                    }
+                    &:nth-child(4) {
+                        background-color: #cb2027;
+                    }
+                    &:hover {
+                        color: $main-color;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .useful-links {
+            ul {
+                li {
+                    margin-bottom: .7rem;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            } 
+        }
+        .open-hours {
+            ul {
+                li {
+                    margin-bottom: .9rem;
+                    .day {
+                        width: 300px;
+                        &::after {
+                            font-family: 'Font Awesome 5 Free';
+                            content: '\f054';
+                            font-weight: 900;
+                            font-size: 1rem;
+                            margin-right: 1rem;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .location {
+            margin-bottom: 4rem;
+            .map {
+                width: 100%;
+                height: 200px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .sub-footer {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #181818;
+        .container {
+            @include flex-center();
+            justify-content: center;
+        }
+    }
+}
+
 /* Animation */
 @keyframes pulse {
     0% {
