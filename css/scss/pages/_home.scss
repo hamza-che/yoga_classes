@@ -13,9 +13,8 @@
     justify-content: space-between;
     align-items: center;
         .logo {
-            width: 60px;
-            border-radius: 52%;
-            background-color: $main-color;
+            width: 80px;
+            border-radius: 50%;
             position: relative;
             z-index: 4;
             img {
@@ -244,12 +243,246 @@
                     margin-bottom: .7rem;
                     i {
                         color: $main-color;
+                        width: 15px;
+                    }
+                    span {
+                        margin-left: .5rem;
                     }
                 }
             }
             .description {
                 color: $p-color;
                 line-height: 1.5;
+            }
+        }
+    }
+}
+
+.free-trial {
+    @include section-padding();
+    text-align: center;
+    .section-title {
+        color: #000;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+        color: $p-color;
+    }
+    .main-btn {
+        margin-bottom: 3.5rem;
+    }
+    .free-trial-imgs {
+        display: grid;
+        grid-template-areas: 'first second third'
+                            'fourth fourth fifth';
+        gap: 1rem;
+        .first {
+            grid-area: first;
+        }
+        .second {
+            grid-area: second;
+        }
+        .third {
+            grid-area: third;
+        }
+        .fourth {
+            grid-area: fourth;
+        }
+        .fifth {
+            grid-area: fifth;
+        }
+        .img {
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+.to-instructors {
+    @include section-padding();
+    background-image: url('../../../images/instructors.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    &::after {
+        @include overlay();
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    p {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3.5rem;
+        line-height: 1.7;
+    }
+    a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 1.5rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        @include flex-center();
+        justify-content: center;
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.instructors {
+    @include section-padding();
+    position: relative;
+    z-index: 2;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        column-gap: 2rem;
+        row-gap: 4rem;
+        .instructor {
+            display: flex;
+            cursor: pointer;
+            .image {
+                width: 80px;
+                height: 80px;
+                margin-right: 1rem;
+                border-radius: 50%;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                h3 {
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                    @include transition();
+                }
+                span {
+                    font-size: .8rem;
+                    color: $p-color;
+                }
+            }
+            &:hover {
+                .info h3 {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+.renewal-series {
+    @include section-padding();
+    background-color: #f8f7fc;
+    .container {
+        display: flex;
+        position: relative;
+        .info {
+            flex-basis: 50%;
+            h2 {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: $main-color;
+                margin-bottom: 3rem;
+            }
+            .main-btn {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        .image {
+            width: 50%;
+            position: absolute;
+            top: -400px;
+            right: 0;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.partners {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        column-gap: 5.5rem;
+        row-gap: 5rem;
+        place-items: center;
+    }
+}
+
+.subscribe {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #181818;
+    color: #fff;
+    .container {
+        @include flex-center();
+        justify-content: space-between;
+        gap: 2rem;
+        .logo {
+            width: 80px;
+            img {
+                max-width: 100%;
+            }
+        }
+        .info {
+            h3 {
+                font-size: 1rem;
+                margin-bottom: .5rem;
+            }
+            p {
+                font-size: .8rem;
+            }
+        }
+        .form {
+            position: relative;
+            input[type=email] {
+                width: 350px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 1rem;
+                background-color: #333333;
+                color: #fff;
+            }
+            input[type=submit] {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }

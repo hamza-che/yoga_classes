@@ -27,6 +27,52 @@
             flex-direction: column;
         }
     }
+    .free-trial {
+        p {
+            width: 80%;
+        }
+        .free-trial-imgs {
+            grid-template-areas: 'first' 'second' 'third' 'fifth' 'fourth';
+            .first {
+                grid-area: first;
+            }
+            .second {
+                grid-area: second;
+            }
+            .third {
+                grid-area: third;
+            }
+            .fourth {
+                grid-area: fourth;
+            }
+            .fifth {
+                grid-area: fifth;
+            }
+        }
+    }
+    .to-instructors {
+        p {
+            width: 80%;
+        }
+    }
+    .instructors {
+        .instructor {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    .renewal-series {
+        .info {
+            flex: 1;
+            text-align: center;
+            h2 {
+                text-align: center !important;
+            }
+        }
+        .image {
+            display: none;
+        }
+    }
 }
 
 /* Small Screens */
@@ -43,13 +89,61 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .free-trial {
+        p {
+            width: 70%;
+        }
+        .free-trial-imgs {
+            grid-template-areas: 'first second' 'third fifth' 'fourth fourth';
+            .first {
+                grid-area: first;
+            }
+            .second {
+                grid-area: second;
+            }
+            .third {
+                grid-area: third;
+            }
+            .fourth {
+                grid-area: fourth;
+            }
+            .fifth {
+                grid-area: fifth;
+            }
+        }
+    }
+    .to-instructors {
+        p {
+            width: 70%;
+        }
+    }
+    .renewal-series {
+        .image {
+            top: -200px !important;
+        }
+    }
+}
 
+@media (max-width: 991px) {
+    .renewal-series {
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
 }
 /* Medium Screens */
 @media (min-width: 992px) {
     .container {
         width: 970px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .renewal-series {
+        .image {
+            top: -350px !important;
+        }
     }
 }
 /* Large Screens */

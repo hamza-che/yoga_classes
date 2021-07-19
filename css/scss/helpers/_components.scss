@@ -1,8 +1,11 @@
 .main-btn {
     padding: 10px;
     border-radius: 1rem;
+    border: none;
+    outline: none;
     background-color: $main-color;
     color: #fff;
+    cursor: pointer;
 }
 
 .section-title {

@@ -39,7 +39,11 @@ li {
     margin-right: auto;
     margin-left: auto;
 }
-button:focus,
-input:focus {
+button:focus {
     outline: none;
+    border: none;
+}
+input {
+    outline: none;
+    border: none;
 }
