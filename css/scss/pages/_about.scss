@@ -1,0 +1,196 @@
+@import '../helpers/global-rules';
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../helpers/components';
+
+.header {
+    @include section-padding();
+    padding-bottom: 7rem;
+    background-color: $bg-color;
+    h1 {
+        font-size: 5.5rem;
+        color: $main-color;
+        font-weight: normal;
+        margin-bottom: 1.2rem;
+    }
+    p {
+        color: $main-color;
+    }
+}
+
+.about {
+    @include section-padding();
+    position: relative;
+    z-index: 10;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        gap: 4rem;
+        .info {
+            flex-basis: 50%;
+            p {
+                color: $secondary-color;
+                line-height: 1.7;
+                &:first-child {
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+        .about-img {
+            position: relative;
+            flex-basis: 50%;
+            img {
+                max-width: 100%;
+                position: absolute;
+                top: -110px;
+                z-index: 11;
+            }
+        }
+    }
+}
+
+.quote {
+    @include section-padding();
+    background-image: url('../../../images/about-us/quote.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 12;
+    color: #fff;
+    text-align: center;
+    &::after {
+        @include overlay();
+        background-color: rgba($main-color, .8);
+    }
+    .container {
+        @include flex-center();
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        z-index: 13;
+        q {
+            font-size: 1.1em;
+            font-style: italic;
+            line-height: 1.8;
+            width: 55%;
+        }
+    }
+}
+
+.levels {
+    @include section-padding();
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 3rem;
+        .level {
+            border-radius: 5px;
+            img {
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                margin-bottom: 1.2rem;
+                color: $main-color;
+                font-weight: normal;
+            }
+            p {
+                color: $p-color;
+                line-height: 1.7;
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+.testimonials {
+    @include section-padding();
+    background-color: #e5eaf7;
+    color: $main-color;
+    .testims {
+        margin-bottom: 5rem;
+        .testim {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            display: none;
+            p {
+                width: 60%;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+                line-height: 1.7;
+            }
+            .person-img {
+                width: 8%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 1rem;
+                border-radius: 50%;
+            }
+            &.active {
+                display: flex;
+            }
+        }
+        .bullets {
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+                width: 15px;
+                height: 15px;
+                background-color: #bfcef8;
+                border-radius: 50%;
+                cursor: pointer;
+                @include transition();
+                &:hover, &.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        row-gap: 3.5rem;
+        justify-content: space-evenly;
+        .stat {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            span {
+                &:first-child {
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.free-trial {
+    @include section-padding();
+    text-align: center;
+    .section-title {
+        color: #000;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+        color: $p-color;
+    }
+    .main-btn {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}

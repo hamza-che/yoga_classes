@@ -90,6 +90,30 @@
             }
         }
     }
+    .header {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    .quote {
+        .container {
+            q {
+                width: 90%;
+            }
+        }
+    }
+    .testimonials {
+        .testims {
+            .testim {
+                p {
+                    width: 95%;
+                }
+                .person-img {
+                    width: 20%;
+                }
+            }
+        }
+    }
 }
 
 /* Small Screens */
@@ -153,8 +177,18 @@
             flex-direction: column;
             text-align: center;
             row-gap: 3rem;
+        }
     }
-}
+    .about {
+        .container {
+            flex-direction: column;
+            .about-img {
+                img {
+                    position: static !important;
+                }
+            }
+        }
+    }
 }
 /* Medium Screens */
 @media (min-width: 992px) {
