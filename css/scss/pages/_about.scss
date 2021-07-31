@@ -1,21 +1,5 @@
-@import '../helpers/global-rules';
-@import '../helpers/variables';
-@import '../helpers/mixins';
-@import '../helpers/components';
-
-.header {
-    @include section-padding();
-    padding-bottom: 7rem;
-    background-color: $bg-color;
-    h1 {
-        font-size: 5.5rem;
-        color: $main-color;
-        font-weight: normal;
-        margin-bottom: 1.2rem;
-    }
-    p {
-        color: $main-color;
-    }
+.custom-shape-divider-bottom-1625953240 {
+    bottom: 6rem;
 }
 
 .about {

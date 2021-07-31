@@ -12,6 +12,11 @@
             display: block;
         }
     }
+    .header {
+        p {
+            width: 100%;
+        }
+    }
     .landing {
         align-items: center;
         justify-content: center;
@@ -107,10 +112,30 @@
             .testim {
                 p {
                     width: 95%;
+                    margin-bottom: 7rem;
                 }
                 .person-img {
                     width: 20%;
                 }
+            }
+        }
+    }
+    .pricing {
+        .plan {
+            text-align: center;
+        }
+    }
+    .pricing-renewal-series {
+        background-image: url('../../../images/pricing/renewal1.jpg');
+        background-position: 70% 100%;
+        &::after {
+            background-color: rgba(#fff, .5);
+        }
+        .info {
+            width: 100%;
+            text-align: center;
+            .section-title {
+                text-align: center;
             }
         }
     }
@@ -164,15 +189,42 @@
             top: -200px !important;
         }
     }
+    .testimonials {
+        .testims {
+            .testim {
+                p {
+                    width: 95%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .pricing-renewal-series {
+        .info {
+            width: 80%;
+        }
+    }
 }
 
 @media (max-width: 991px) {
+    .custom-shape-divider-bottom-1625953240 {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+        }
+    }
     .renewal-series {
         h2 {
             font-size: 2.2rem;
         }
     }
     .subscribe {
+        padding-bottom: 3rem;
         .container {
             flex-direction: column;
             text-align: center;

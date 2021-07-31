@@ -129,6 +129,27 @@ input {
   color: #fff;
 }
 
+.header {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-bottom: 7rem;
+  background-color: #d1d6e3;
+}
+
+.header h1 {
+  font-size: 5.5rem;
+  color: #3e6bf2;
+  font-weight: normal;
+  margin-bottom: 1.2rem;
+}
+
+.header p {
+  padding-bottom: 3rem;
+  width: 45%;
+  color: #3e6bf2;
+  line-height: 1.7;
+}
+
 .subscribe {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -314,8 +335,9 @@ footer .sub-footer .container {
 }
 
 .custom-shape-divider-bottom-1625953240 {
+  display: none;
   position: absolute;
-  bottom: 9rem;
+  bottom: 1.2rem;
   left: 0;
   z-index: 10;
   width: 100%;
@@ -335,7 +357,7 @@ footer .sub-footer .container {
 }
 
 .main-btn {
-  padding: 10px;
+  padding: 10px 1rem;
   border-radius: 1rem;
   border: none;
   outline: none;
@@ -901,6 +923,9 @@ footer .sub-footer .container {
   .navbar .menu-toggle {
     display: block;
   }
+  .header p {
+    width: 100%;
+  }
   .landing {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -991,9 +1016,27 @@ footer .sub-footer .container {
   }
   .testimonials .testims .testim p {
     width: 95%;
+    margin-bottom: 7rem;
   }
   .testimonials .testims .testim .person-img {
     width: 20%;
+  }
+  .pricing .plan {
+    text-align: center;
+  }
+  .pricing-renewal-series {
+    background-image: url("../../../images/pricing/renewal1.jpg");
+    background-position: 70% 100%;
+  }
+  .pricing-renewal-series::after {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .pricing-renewal-series .info {
+    width: 100%;
+    text-align: center;
+  }
+  .pricing-renewal-series .info .section-title {
+    text-align: center;
   }
 }
 
@@ -1046,11 +1089,32 @@ footer .sub-footer .container {
   .renewal-series .image {
     top: -200px !important;
   }
+  .testimonials .testims .testim p {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .pricing-renewal-series .info {
+    width: 80%;
+  }
 }
 
 @media (max-width: 991px) {
+  .custom-shape-divider-bottom-1625953240 {
+    display: none;
+  }
+  .header {
+    text-align: center;
+  }
+  .header p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
   .renewal-series h2 {
     font-size: 2.2rem;
+  }
+  .subscribe {
+    padding-bottom: 3rem;
   }
   .subscribe .container {
     -webkit-box-orient: vertical;

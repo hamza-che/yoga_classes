@@ -374,66 +374,71 @@ footer .sub-footer .container {
   text-align: center;
 }
 
-.custom-shape-divider-bottom-1625953240 {
-  bottom: 6rem;
-}
-
-.about {
+.pricing {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  position: relative;
-  z-index: 10;
 }
 
-.about .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  gap: 4rem;
+.pricing .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 7rem;
 }
 
-.about .container .info {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.pricing .container .plan h3 {
+  color: #3e6bf2;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
 }
 
-.about .container .info p {
-  color: #726f71;
-  line-height: 1.7;
+.pricing .container .plan h3 span {
+  font-size: .9rem;
+  color: #777777;
 }
 
-.about .container .info p:first-child {
-  margin-bottom: 1.2rem;
+.pricing .container .plan .plan-info {
+  height: 160px;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
 }
 
-.about .container .about-img {
-  position: relative;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.pricing .container .plan .plan-info h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #3e6bf2;
 }
 
-.about .container .about-img img {
-  max-width: 100%;
-  position: absolute;
-  top: -110px;
-  z-index: 11;
+.pricing .container .plan .plan-info p {
+  font-size: .9rem;
+  line-height: 1.4;
+  color: #777777;
 }
 
-.quote {
+.pricing .container .plan .main-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+
+.pricing-renewal-series {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-image: url("../../../images/about-us/quote.jpg");
-  background-position: center;
+  background-image: url("../../../images/pricing/renewal2.jpg");
+  background-position: 100% 65%;
   background-size: cover;
   position: relative;
-  z-index: 12;
-  color: #fff;
-  text-align: center;
 }
 
-.quote::after {
+.pricing-renewal-series::after {
   content: '';
   position: absolute;
   left: 0;
@@ -441,189 +446,25 @@ footer .sub-footer .container {
   width: 100%;
   height: 100%;
   background-color: rgba(62, 107, 242, 0.9);
-  background-color: rgba(62, 107, 242, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.quote .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
-  position: relative;
-  z-index: 13;
-}
-
-.quote .container q {
-  font-size: 1.1em;
-  font-style: italic;
-  line-height: 1.8;
-  width: 55%;
-}
-
-.levels {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.levels .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 3rem;
-}
-
-.levels .container .level {
-  border-radius: 5px;
-}
-
-.levels .container .level img {
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
-
-.levels .container .level h3 {
-  margin-bottom: 1.2rem;
-  color: #3e6bf2;
-  font-weight: normal;
-}
-
-.levels .container .level p {
-  color: #777777;
-  line-height: 1.7;
-  font-size: .9em;
-}
-
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-color: #e5eaf7;
-  color: #3e6bf2;
-}
-
-.testimonials .testims {
-  margin-bottom: 5rem;
-}
-
-.testimonials .testims .testim {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  display: none;
-}
-
-.testimonials .testims .testim p {
-  width: 60%;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-.testimonials .testims .testim .person-img {
-  width: 8%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  border-radius: 50%;
-}
-
-.testimonials .testims .testim.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.testimonials .testims .bullets {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.testimonials .testims .bullets li {
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
-  width: 15px;
-  height: 15px;
-  background-color: #bfcef8;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.testimonials .testims .bullets li:hover, .testimonials .testims .bullets li.active {
-  background-color: #3e6bf2;
-}
-
-.testimonials .stats {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  row-gap: 3.5rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.testimonials .stats .stat {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.testimonials .stats .stat span:first-child {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.free-trial {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  text-align: center;
-}
-
-.free-trial .section-title {
-  color: #000;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.free-trial p {
+.pricing-renewal-series .info {
   width: 50%;
-  margin: auto;
-  margin-bottom: 3rem;
-  line-height: 1.5;
-  color: #777777;
+  color: #3e6bf2;
+  position: relative;
+  z-index: 2;
 }
 
-.free-trial .main-btn {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+.pricing-renewal-series .info .section-title {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.pricing-renewal-series .info p {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
 }
 
 /* XS Screens */
@@ -869,4 +710,4 @@ footer .sub-footer .container {
     top: -100% !important;
   }
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=pricing.css.map */
