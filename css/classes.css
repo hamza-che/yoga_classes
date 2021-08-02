@@ -425,97 +425,9 @@ footer .sub-footer .container {
   text-align: center;
 }
 
-.pricing {
+.yoga-classes {
   padding-top: 7rem;
   padding-bottom: 7rem;
-}
-
-.pricing .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
-  row-gap: 7rem;
-}
-
-.pricing .container .plan h3 {
-  color: #3e6bf2;
-  font-size: 3rem;
-  font-weight: normal;
-  font-family: 'Lato', sans-serif;
-}
-
-.pricing .container .plan h3 span {
-  font-size: .9rem;
-  color: #777777;
-}
-
-.pricing .container .plan .plan-info {
-  height: 160px;
-  padding: 2rem 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
-}
-
-.pricing .container .plan .plan-info h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #3e6bf2;
-}
-
-.pricing .container .plan .plan-info p {
-  font-size: .9rem;
-  line-height: 1.4;
-  color: #777777;
-}
-
-.pricing .container .plan .main-btn {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-transform: uppercase;
-}
-
-.pricing-renewal-series {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-image: url("../../../images/pricing/renewal2.jpg");
-  background-position: 100% 65%;
-  background-size: cover;
-  position: relative;
-}
-
-.pricing-renewal-series::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(62, 107, 242, 0.9);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.pricing-renewal-series .info {
-  width: 50%;
-  color: #3e6bf2;
-  position: relative;
-  z-index: 2;
-}
-
-.pricing-renewal-series .info .section-title {
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.pricing-renewal-series .info p {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  line-height: 1.7;
 }
 
 /* XS Screens */
@@ -794,4 +706,4 @@ footer .sub-footer .container {
     top: -100% !important;
   }
 }
-/*# sourceMappingURL=pricing.css.map */
+/*# sourceMappingURL=classes.css.map */
