@@ -139,6 +139,21 @@
             }
         }
     }
+    .contact-us {
+        form {
+            input, textarea {
+                width: 100% !important;
+                margin-right: 0;
+                margin-left: 0 !important;
+            }
+        }
+        .location {
+            .slide {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
 }
 
 /* Small Screens */
@@ -201,7 +216,7 @@
     }
     .pricing-renewal-series {
         .info {
-            width: 80%;
+            width: 70%;
         }
     }
 }
@@ -237,6 +252,25 @@
             .about-img {
                 img {
                     position: static !important;
+                }
+            }
+        }
+    }
+    .contact-us {
+        .container {
+            flex-direction: column;
+            row-gap: 4rem;
+            .bullets {
+                position: static !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                transform: translateX(0) !important;
+                text-align: center;
+                margin-top: 2rem;
+                li {
+                    display: inline-block !important;
+                    margin-left: 5px !important;
+                    margin-right: 5px !important;
                 }
             }
         }

@@ -1,0 +1,80 @@
+.contact-us {
+    @include section-padding();
+    .container {
+        display: flex;
+        form {
+            text-align: center;
+            flex-basis: 50%;
+            input, textarea {
+                padding: 10px;
+                margin: .5rem;
+                border: 1px solid #e9e9e9;
+                border-radius: 3px
+            }
+            .inputs {
+                display: block;
+                input {
+                    width: calc(50% - 10px - 2rem);
+                }
+            }
+            textarea {
+                display: block;
+                height: 300px;
+                width: calc(100% - 4rem);
+                margin-left: 2rem;
+            }
+            .main-btn {
+                margin-top: 1.5rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                text-transform: uppercase;
+            }
+        }
+        .location {
+            flex-basis: 50%;
+            position: relative;
+            .slide {
+                display: none;
+                &.active {
+                    display: flex;
+                }
+                & > div {
+                    flex-basis: 50%;
+                    * {
+                        margin-top: .9rem;
+                        margin-bottom: .9rem;
+                    }
+                    address {
+                        line-height: 1.5;
+                    }
+                    span {
+                        display: block;
+                        &.phone {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+            .bullets {
+                position: absolute;
+                right: -40px;
+                bottom: 50%;
+                transform: translateX(-50%);
+                li {
+                    display: block;
+                    margin-top: 7px;
+                    margin-bottom: 7px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #bfcef8;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    @include transition();
+                    &:hover, &.active {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -55,7 +55,8 @@ button:focus {
   border: none;
 }
 
-input {
+input,
+textarea {
   outline: none;
   border: none;
 }
@@ -1038,6 +1039,18 @@ footer .sub-footer .container {
   .pricing-renewal-series .info .section-title {
     text-align: center;
   }
+  .contact-us form input, .contact-us form textarea {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0 !important;
+  }
+  .contact-us .location .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* Small Screens */
@@ -1094,7 +1107,7 @@ footer .sub-footer .container {
     margin-bottom: 2rem;
   }
   .pricing-renewal-series .info {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -1132,6 +1145,27 @@ footer .sub-footer .container {
   }
   .about .container .about-img img {
     position: static !important;
+  }
+  .contact-us .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 4rem;
+  }
+  .contact-us .container .bullets {
+    position: static !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .contact-us .container .bullets li {
+    display: inline-block !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
   }
 }
 
