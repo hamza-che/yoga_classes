@@ -565,8 +565,9 @@ footer .sub-footer .container {
   content: '\f04b';
   font-weight: 900;
   font-size: 2em;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -952,8 +953,8 @@ footer .sub-footer .container {
     width: 100%;
     padding: 1rem;
     background-color: rgba(62, 107, 242, 0.9);
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
@@ -966,8 +967,8 @@ footer .sub-footer .container {
     margin-left: auto;
     -webkit-transform: translateX(-500%);
             transform: translateX(-500%);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: .6s;
+    transition: .6s;
   }
   .navbar .links a:not(.free-trial):hover {
     background-color: #fff;

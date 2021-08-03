@@ -15,7 +15,7 @@
             width: 100%;
             padding: 1rem;
             background-color: rgba($main-color, .9);
-            transform: translateX(100%);
+            transform: translateX(-100%);
             @include transition();
             a {
                 margin-bottom: 1rem;
@@ -25,7 +25,7 @@
                 margin-right: auto;
                 margin-left: auto;
                 transform: translateX(-500%);
-                @include transition();
+                transition: .6s;
                 &:not(.free-trial) {
                     &:hover {
                         background-color: #fff;
