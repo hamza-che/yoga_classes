@@ -157,7 +157,7 @@ textarea {
 
 .wave {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
 }
@@ -1046,7 +1046,7 @@ footer .sub-footer .container {
     grid-area: fifth;
   }
   .to-instructors p {
-    width: 80%;
+    width: 90%;
   }
   .instructors .instructor {
     width: 80%;
