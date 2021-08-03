@@ -1,5 +1,10 @@
-const playBtn = document.querySelector(".play");
-const video = document.querySelector(".features .video video");
+const menuToggle = document.querySelector(".navbar .menu-toggle");
+const navLinks = document.querySelector(".navbar .links");
+
+menuToggle.onclick = function () {
+  menuToggle.style.transform = "rotation(90deg)";
+  navLinks.classList.toggle("open");
+};
 
 // Map Functionality
 mapboxgl.accessToken =
@@ -8,21 +13,4 @@ var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
   center: [33.796296512357024, 2.8619866526413844],
-});
-
-// Features Video Functionality
-playBtn.addEventListener("click", function () {
-  video.play();
-  this.classList.add("remove-btn");
-});
-
-video.addEventListener("ended", function () {
-  playBtn.classList.remove("remove-btn");
-});
-
-video.addEventListener("playing", function () {
-  this.onclick = function () {
-    this.pause();
-    playBtn.classList.remove("remove-btn");
-  };
 });

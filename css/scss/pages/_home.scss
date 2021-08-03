@@ -1,6 +1,6 @@
 .landing {
     background: #d1d6e3;
-    height: 500px;
+    height: 530px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -15,22 +15,20 @@
             }
         }
         .landing-title {
-            line-height: $p-l-height;
             flex-basis: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             top: 100px;
+            z-index: 3;
             font-size: 1.5rem;
+            line-height: $p-l-height;
             color: $main-color;
             h1 {
                 font-weight: normal;
             }
         }
-    }
-    .custom-shape-divider-bottom-1625953240 {
-        bottom: -1.5rem;
     }
 }
 

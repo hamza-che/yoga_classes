@@ -5,8 +5,51 @@
 /* Mobile Screens */
 @media (max-width: 767px) {
     .navbar {
+        position: relative;
         .links {
-            display: none;
+            position: absolute;
+            bottom: -355px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba($main-color, .9);
+            transform: translateX(100%);
+            @include transition();
+            a {
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+                text-align: center;
+                width: 65%;
+                margin-right: auto;
+                margin-left: auto;
+                transform: translateX(-500%);
+                @include transition();
+                &:not(.free-trial) {
+                    &:hover {
+                        background-color: #fff;
+                        li {
+                            color: $main-color;
+                        }
+                    }
+                }
+                li {
+                    color: #fff;
+                }
+                &.free-trial {
+                    background-color: #fff;
+                    li {
+                        color: $main-color;
+                    }
+                }
+            }
+            &.open {
+                transform: translateX(0);
+                a {
+                    transform: translateX(0);
+                }
+            }
         }
         .menu-toggle {
             display: block;
@@ -25,11 +68,6 @@
         }
         .landing-title {
             flex-basis: 100% !important;
-        }
-    }
-    .features {
-        .container {
-            flex-direction: column;
         }
     }
     .free-trial {
@@ -72,6 +110,7 @@
             flex: 1;
             text-align: center;
             h2 {
+                font-size: 2.1rem;
                 text-align: center !important;
             }
         }
@@ -244,6 +283,11 @@
             flex-direction: column;
             text-align: center;
             row-gap: 3rem;
+        }
+    }
+    .features {
+        .container {
+            flex-direction: column;
         }
     }
     .about {
